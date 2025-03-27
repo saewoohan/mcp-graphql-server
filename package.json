@@ -1,22 +1,28 @@
 {
-  "name": "naver-mcp",
-  "version": "1.0.0",
+  "name": "mcp-graphql",
+  "version": "0.0.1",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
     "format": "npx @biomejs/biome format --write src/",
-    "lint": "npx @biomejs/biome lint src/",
-    "check": "npx @biomejs/biome check --apply src/"
+    "check": "npx @biomejs/biome check --apply src/",
+    "lint": "npx @biomejs/biome lint src/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@graphql-codegen/cli": "^5.0.5",
+    "@graphql-codegen/typescript": "^4.1.6",
+    "@graphql-codegen/typescript-graphql-request": "^6.2.0",
+    "@graphql-codegen/typescript-operations": "^4.6.0",
+    "@graphql-codegen/typescript-react-query": "^6.1.0",
     "@modelcontextprotocol/sdk": "^1.7.0",
     "axios": "^1.8.4",
     "graphql": "^16.10.0",
+    "yargs": "^17.7.2",
     "zod": "^3.24.2"
   },
   "devDependencies": {

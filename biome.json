@@ -4,19 +4,15 @@
     },
     "formatter": {
         "indentStyle": "space",
-        "indentWidth": 4
+        "indentWidth": 2
     },
-    "vcs": {
-        "enabled": true,
-        "clientKind": "git",
-        "useIgnoreFile": true
-    },
+   "linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	},
     "files": {
-        "ignore": [".vscode/**", ".yarn/**", "dist"]
-    },
-    "javascript": {
-        "parser": {
-            "unsafeParameterDecoratorsEnabled": true
-        }
+        "ignore": ["node_modules", "build"]
     }
 }
