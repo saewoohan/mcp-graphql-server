@@ -54,7 +54,7 @@ export const calculateQueryComplexity = (query: string): number => {
     let complexity = 0;
 
     visit(document, {
-      Field(node) {
+      Field(_) {
         complexity += 1;
       },
     });

@@ -1,11 +1,16 @@
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import { readFileSync } from "node:fs";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const packageVersion = JSON.parse(
   readFileSync(join(__dirname, "..", "package.json"), "utf-8"),
 ).version;
+
 
 export const parseArguments = () => {
   return yargs(hideBin(process.argv))
