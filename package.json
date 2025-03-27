@@ -14,21 +14,14 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@graphql-codegen/cli": "^5.0.5",
-    "@graphql-codegen/typescript": "^4.1.6",
-    "@graphql-codegen/typescript-graphql-request": "^6.2.0",
-    "@graphql-codegen/typescript-operations": "^4.6.0",
-    "@graphql-codegen/typescript-react-query": "^6.1.0",
     "@modelcontextprotocol/sdk": "^1.7.0",
     "axios": "^1.8.4",
     "graphql": "^16.10.0",
-    "yargs": "^17.7.2",
-    "zod": "^3.24.2"
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@types/node": "^22.13.13",
-    "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   }
 }
