@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'yarn'
+    
+    - name: Install dependencies
+      run: yarn install
+    
+    - name: Lint code
+      run: yarn lint
+
+    - name: Format code
+      run: yarn format
+
+    - name: Check for changes after formatting
+      run: |
+        if [[ -n $(git status --porcelain) ]]; then
+          echo "Code formatting issues found. Please run 'yarn format' locally and commit changes."
+          git diff
+          exit 1
+        fi
+    
+    - name: Build
+      run: yarn build
+    
+    - name: Run tests
+      run: yarn test
