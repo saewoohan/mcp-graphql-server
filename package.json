@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/saewoohan/mcp-server-graphql"
+    "url": "https://github.com/saewoohan/mcp-server-tools"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.7.0",
