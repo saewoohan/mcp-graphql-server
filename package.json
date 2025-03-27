@@ -1,18 +1,41 @@
 {
-  "name": "mcp-graphql",
+  "name": "mcp-graphql-tools",
   "version": "0.0.1",
-  "main": "index.js",
+  "description": "GraphQL MCP server for AI assistants",
+  "author": "saewoohan <hso2341@naver.com>",
+  "license": "MIT",
+  "main": "build/index.js",
   "type": "module",
+  "bin": {
+    "mcp-graphql": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "format": "npx @biomejs/biome format --write src/",
     "check": "npx @biomejs/biome check --apply src/",
     "lint": "npx @biomejs/biome lint src/"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "graphql",
+    "mcp",
+    "claude",
+    "ai",
+    "assistant",
+    "modelcontextprotocol",
+    "llm"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saewoohan/mcp-server-graphql"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.7.0",
     "axios": "^1.8.4",
