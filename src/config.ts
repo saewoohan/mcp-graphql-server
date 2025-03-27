@@ -11,7 +11,6 @@ const packageVersion = JSON.parse(
   readFileSync(join(__dirname, "..", "package.json"), "utf-8"),
 ).version;
 
-
 export const parseArguments = () => {
   return yargs(hideBin(process.argv))
     .option("endpoint", {
