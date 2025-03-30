@@ -1,4 +1,4 @@
-# GraphQL MCP Server
+# GraphQL MCP Tools
 
 A Model Context Protocol (MCP) server implementation that provides GraphQL API interaction capabilities. This server enables AI assistants to interact with GraphQL APIs through a set of standardized tools.
 
