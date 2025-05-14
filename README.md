@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/saewoohan-mcp-graphql-tools-badge.png)](https://mseep.ai/app/saewoohan-mcp-graphql-tools)
+
 # GraphQL MCP Tools
 
 A Model Context Protocol (MCP) server implementation that provides GraphQL API interaction capabilities. This server enables AI assistants to interact with GraphQL APIs through a set of standardized tools.
